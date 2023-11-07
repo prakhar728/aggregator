@@ -34,4 +34,4 @@ go build && ./aggregator
 to start the server.
 
 
-Here is the [Postman Collection](https://api.postman.com/collections/16552400-47ae7452-1e8b-4fd1-bcdb-829f0a533623?access_key=PMAT-01HEDM0QT8FW2517JQTQHQNBPD) to Interact with the API.
+Here is the [Postman Collection](./Go%20Aggregator.postman_collection.json) to Interact with the API.
