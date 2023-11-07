@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "47ae7452-1e8b-4fd1-bcdb-829f0a533623",
 		"name": "Go Aggregator",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "16552400",
 		"_collection_link": "https://winter-resonance-330223.postman.co/workspace/My-Workspace~e0235ad5-3802-478a-8057-9a76af10dcb0/collection/16552400-47ae7452-1e8b-4fd1-bcdb-829f0a533623?action=share&source=collection_link&creator=16552400"
 	},
@@ -24,18 +24,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/v1/healthz",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"healthz"
-					]
-				}
+				"url": "http://localhost:8080/v1/healthz"
 			},
 			"response": []
 		},
@@ -56,18 +45,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/v1/err",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"err"
-					]
-				}
+				"url": "http://localhost:8080/v1/err"
 			},
 			"response": []
 		},
@@ -85,18 +63,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/v1/users",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"users"
-					]
-				}
+				"url": "http://localhost:8080/v1/users"
 			},
 			"response": []
 		},
@@ -111,18 +78,7 @@
 						"type": "text"
 					}
 				],
-				"url": {
-					"raw": "http://localhost:8080/v1/users",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"users"
-					]
-				}
+				"url": "http://localhost:8080/v1/users"
 			},
 			"response": []
 		},
@@ -139,25 +95,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Joe's Blog 5\",\n    \"url\":\"https://garbage.dev/index.xml\"\n}",
+					"raw": "{\n    \"name\":\"Boot Dev Blog 5\",\n    \"url\":\"https://blog.boot.dev/index.xml\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/v1/feeds",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"feeds"
-					]
-				}
+				"url": "http://localhost:8080/v1/feeds"
 			},
 			"response": []
 		},
@@ -173,18 +118,7 @@
 						"disabled": true
 					}
 				],
-				"url": {
-					"raw": "http://localhost:8080/v1/feeds",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"feeds"
-					]
-				}
+				"url": "http://localhost:8080/v1/feeds"
 			},
 			"response": []
 		},
@@ -201,25 +135,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"feed_id\":\"d7a51cf7-25b1-4bac-b6b0-9bc834adf70f\"\n}",
+					"raw": "{\n    \"feed_id\":\"c7087bf8-2c86-4d57-bfc1-cf7ab9e0044a\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/v1/feed_follows",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"feed_follows"
-					]
-				}
+				"url": "http://localhost:8080/v1/feed_follows"
 			},
 			"response": []
 		},
@@ -234,18 +157,7 @@
 						"type": "text"
 					}
 				],
-				"url": {
-					"raw": "http://localhost:8080/v1/feed_follows",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"feed_follows"
-					]
-				}
+				"url": "http://localhost:8080/v1/feed_follows"
 			},
 			"response": []
 		},
@@ -260,19 +172,22 @@
 						"type": "text"
 					}
 				],
-				"url": {
-					"raw": "http://localhost:8080/v1/feed_follows/d23092f5-0630-42e9-9788-eedb0c2c0ecd",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"feed_follows",
-						"d23092f5-0630-42e9-9788-eedb0c2c0ecd"
-					]
-				}
+				"url": "http://localhost:8080/v1/feed_follows/d23092f5-0630-42e9-9788-eedb0c2c0ecd"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch posts from followed feeds",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ApiKey 68f674f769d1db71d47dc5b32eb24edcd22ae36fb6331ade2e0560bab84cfbf8",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/v1/posts"
 			},
 			"response": []
 		}
